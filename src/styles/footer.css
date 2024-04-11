@@ -1,0 +1,68 @@
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.861);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_separation{
+    width: 90%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.5);
+}
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.personal_info p,
+.personal_info a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.network {
+    display: flex;
+}
+
+.network a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.network a:last-child {
+    margin-right: 0;
+}
+
+.network a:hover {
+    color: lightgray;
+}
+.personal_info{
+    font-family: regular;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.network{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+    .personal_info {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .network {
+        flex-direction: row;
+    }
+}
