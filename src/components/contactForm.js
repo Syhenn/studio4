@@ -3,8 +3,8 @@ import '../styles/contactForm.css';
 const regionsAndCities = {
     "Bruxelles-Capitale": ["Bruxelles"],
     "Wallonie": ["Namur", "Charleroi", "Liège", "Mons"],
-    "Flandre": ["Anvers", "Gand", "Bruges"]
-    // Ajoutez d'autres régions et villes belges ici
+    "Flandre": ["Anvers", "Gand", "Bruges"],
+    "France": [""]
   };
 
 function ContactForm() {

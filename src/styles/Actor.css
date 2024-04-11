@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('../fonts/TitilliumWeb-Regular.ttf');
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/BebasNeue.ttf');
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.actor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.bar {
+    width: 90vw;
+    height: 1px;
+    background-color: #5e5e5e;
+}
+
+.services, .why, .meth, .app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 50px;
+}
+
+.services img, .why img, .meth img, .app img {
+    width: 20vw; 
+    max-width: 300px; 
+}
+.services div, .why div, .meth div, .app div {
+    margin: 0 50px 0 50px;
+    flex: 1;
+}
+
+h1, p {
+    margin: 0;
+}
+h1 {
+    font-size: 2.5vw; 
+    font-weight: bold;
+    color: #333333; 
+    font-family: bebas, sans-serif;
+}
+
+p, li{
+    font-size: 1.3vw; 
+    color: #666666; 
+    line-height: 1.6; 
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+.services div, .why div, .meth div, .app div {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    background-color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+    .actor{
+        display: flex;
+        flex-direction: column;
+    }
+    .services,  .meth {
+        display: flex;
+        flex-direction: column;
+    }.why,.app{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .services img, .why img, .meth img, .app img {
+        width: 45vw; 
+        max-width: 300px;
+    }
+    .services div, .why div, .meth div, .app div {
+        margin: 10px 0 0 0;
+        flex: 1;
+    }
+    h1 {
+        font-size: 4.5vw; 
+        font-weight: bold;
+        color: #333333; 
+    }
+    
+    p {
+        font-size: 3.5vw; 
+        color: #666666; 
+        line-height: 1.6; 
+    }
+}

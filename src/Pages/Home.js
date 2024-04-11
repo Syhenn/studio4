@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import '../styles/Home.css';
 import missionPic from '../imgs/home_mission_pic.png';
 import public_1 from '../imgs/1.png';
@@ -6,9 +7,13 @@ import public_2 from '../imgs/2.png';
 import public_3 from '../imgs/3.png';
 import background from '../imgs/home_background_img.png';
 function Home(){
-
+    const navigate = useNavigate();
+    const navigate_actor= async ()=> {
+        navigate('/Actor');
+    }
     return(
     <>
+    <div className="home-container">
         <div className="home-background">
             <div className="home-presentation">
                 <img src={background} alt="background"/>
@@ -19,6 +24,7 @@ function Home(){
                 <button className="home_info_button">En savoir plus</button>
             </div>
         </div>
+        <span className="bar"></span>
         <div className="home_misson">
             <div className="home_mission_text">
                 <h1>Studio4: Votre Préparation, Notre Mission</h1>
@@ -47,7 +53,7 @@ function Home(){
                     </p>
                 </div>
                 <div>
-                    <button className="home_mission_button">En savoir plus</button>
+                    <button className="home_mission_button" onClick={navigate_actor}>En savoir plus</button>
                 </div>
             </div>
             <div className="home_public_cont">
@@ -81,7 +87,7 @@ function Home(){
 
             </div>
         </div>
-        
+        </div>
     </>
     );
 }
