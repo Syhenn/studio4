@@ -46,7 +46,7 @@ nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: semiBold;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     transition: .3s;
 }
 
@@ -60,9 +60,9 @@ nav a:hover {
     color: rgb(40, 40, 40);
     background-color: rgb(255, 255, 255);
     width: 15vw;
-    height: 5vh;
+    height: 6vh;
     font-family: t-black;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     transition: .5s;
 }
 
