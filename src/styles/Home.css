@@ -58,12 +58,14 @@ p{
   border: none;
   color: rgb(40, 40, 40);
   background-color: rgb(255, 255, 255);
+  padding: 15px 30px 15px 30px;
   width: 18vw;
   height: 7vh;
   font-family: t-black;
   font-size: 1.3rem;
   transition: .5s;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 
 .home_info_button:hover{
@@ -72,7 +74,7 @@ p{
 }
 #home_misson {
   display: flex;
-  margin: 200px 15px 20px 15px;
+  margin: 50px 15px 20px 15px;
   justify-content: center;
   align-items: center;
 }
@@ -124,6 +126,7 @@ p{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 200px;
 }
 
 .home_public_cont {

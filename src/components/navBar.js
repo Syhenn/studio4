@@ -24,7 +24,20 @@ function NavBar() {
         navigate('/');
     }
     const navigateToHomeSection = (sectionId) => {
-        navigate(`/#${sectionId}`);
+        if (sectionId === 'home_public') {
+            window.location.href = '/#home_public';
+        } 
+        else if (sectionId === 'home_misson') {
+            window.location.href = '/#home_misson';
+        }        
+        else {
+            navigate(`/#${sectionId}`);
+        }
+        closeMenu();
+    }
+    const scrollToFooter = () => {
+        const footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: "smooth" });
         closeMenu();
     }
     return (
@@ -33,13 +46,13 @@ function NavBar() {
                 <img src={studio4Logo} alt="studio4 logo" onClick={navigateHome}/>
             </div>
             <div className={`nav_links ${isOpen ? "active" : "close"}`}>
-                <a href="#" onClick={() => navigateToHomeSection('home_mission')}>About</a>
+                <a href="#home_misson" onClick={() => navigateToHomeSection('home_misson')}>About</a>
                 <a href="#" onClick={() => navigateToHomeSection('home_public')}>Cast training</a>
                 <a href="#" onClick={() => navigateToHomeSection('home_public')}>Articles</a>
-                <a href="#" onClick={() => navigateToHomeSection('home_public')}>Contact</a>
+                <button className="contact_button" onClick={scrollToFooter}>Contact</button>
             </div>
             <div className="nav_button_area">
-                <button className="nav_enquire_button">En savoir plus</button>
+                <button className="nav_enquire_button" onClick={() => navigateToHomeSection('home_public')}>En savoir plus</button>
                 <div className="burger_menu" onClick={toggleMenu}>
                     <FontAwesomeIcon icon={faBars} />
                 </div>

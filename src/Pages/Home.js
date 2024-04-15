@@ -27,26 +27,10 @@ function Home(){
             <div className="home-presentation-text">
                  <h1>Prepare to perform</h1>
                 <h2>Studio4: L'Expérience Cast Training Ultime pour Acteurs et Créateurs de contenu</h2>
-                <button className="home_info_button">En savoir plus</button>
+                <a className="home_info_button" href="#home_public">En savoir plus</a>
             </div>
         </div>
         <span className="bar"></span>
-        <div id="home_misson">
-            <div className="home_mission_text">
-                <h1>Studio4: Votre Préparation, Notre Mission</h1>
-                <p>Chez studio4, nous faisons plus que préparer les acteurs et créateurs de contenu
-                    à leurs rôles ; nous transformons physiquement chaque individu pour répondre à ses 
-                    objectifs spécifiques. Notre approche dépasse l'ésthétique, ciblant la prévention des 
-                    blessures, la gestion de la fatigue, et une captivation authentique de l'audience. Nous personnalisons
-                    chaque entraînement pour sculpter votre endurance et votre apparence, assurant une performance
-                    énergique et persuasive à l'écran.  
-                </p>
-                <button className="home_mission_button">En savoir plus</button>
-            </div>
-            <div className="home_mission_pic">
-                <img src={missionPic} />
-            </div>
-        </div>
         <div id="home_public">
             <div className="home_public_cont">
                 <div className="public_picture">
@@ -91,6 +75,22 @@ function Home(){
                     <button className="home_mission_button" onClick={navigate_artist}>En savoir plus</button>
                 </div>
 
+            </div>
+        </div>
+        <div id="home_misson">
+            <div className="home_mission_text">
+                <h1>Studio4: Votre Préparation, Notre Mission</h1>
+                <p>Chez studio4, nous faisons plus que préparer les acteurs et créateurs de contenu
+                    à leurs rôles ; nous transformons physiquement chaque individu pour répondre à ses 
+                    objectifs spécifiques. Notre approche dépasse l'ésthétique, ciblant la prévention des 
+                    blessures, la gestion de la fatigue, et une captivation authentique de l'audience. Nous personnalisons
+                    chaque entraînement pour sculpter votre endurance et votre apparence, assurant une performance
+                    énergique et persuasive à l'écran.  
+                </p>
+                <button className="home_mission_button">En savoir plus</button>
+            </div>
+            <div className="home_mission_pic">
+                <img src={missionPic} />
             </div>
         </div>
         </div>

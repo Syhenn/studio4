@@ -1,10 +1,13 @@
-import React from "react";
+import {React, useEffect} from "react";
 import ac_serv from '../imgs/actor-service.png';
 import ac_met from '../imgs/actor-meth.png';
 import ac_app from '../imgs/actor-app.png';
 import ac_why from '../imgs/actor-why.png';
 import '../styles/Creator.css';
 function Creator(){
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return(
         <div className="creator">
             <div className="services">

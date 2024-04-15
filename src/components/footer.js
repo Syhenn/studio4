@@ -6,7 +6,7 @@ import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer(){
     return(
-        <footer>
+        <footer id="footer">
             <ContactForm />
             <span className="footer_separation"></span>
             <div className="personal_info">
