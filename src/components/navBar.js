@@ -20,19 +20,23 @@ function NavBar() {
         // Retrait de la classe floue de l'élément body lorsque le menu est fermé
         document.body.classList.remove('floue');
     }
-    const navigateHome = ()=>{
+    const navigateHome = () =>{
         navigate('/');
+    }
+    const navigateToHomeSection = (sectionId) => {
+        navigate(`/#${sectionId}`);
+        closeMenu();
     }
     return (
         <nav>
             <div className="nav_logo_container">
                 <img src={studio4Logo} alt="studio4 logo" onClick={navigateHome}/>
             </div>
-            <div className={`nav_links ${isOpen ? "active" : ""}`}>
-                <a href="#" onClick={closeMenu}>About</a>
-                <a href="#" onClick={closeMenu}>Cast training</a>
-                <a href="#" onClick={closeMenu}>Articles</a>
-                <a href="#" onClick={closeMenu}>Contact</a>
+            <div className={`nav_links ${isOpen ? "active" : "close"}`}>
+                <a href="#" onClick={() => navigateToHomeSection('home_mission')}>About</a>
+                <a href="#" onClick={() => navigateToHomeSection('home_public')}>Cast training</a>
+                <a href="#" onClick={() => navigateToHomeSection('home_public')}>Articles</a>
+                <a href="#" onClick={() => navigateToHomeSection('home_public')}>Contact</a>
             </div>
             <div className="nav_button_area">
                 <button className="nav_enquire_button">En savoir plus</button>

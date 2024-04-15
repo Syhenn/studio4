@@ -12,7 +12,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Home from './Pages/Home';
 import Actor from './Pages/Actor';
-
+import Creator from './Pages/Creator';
+import Artist from './Pages/Artiste';
 library.add(faInstagram, faLinkedin, faCoffee);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +23,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/Actor" element={<Actor/>} />
-        
+        <Route path="/Creator" element={<Creator/>}/>
+        <Route path="/Artist" element={<Artist/>}/>
       </Routes>
       <Footer/>
   </BrowserRouter>

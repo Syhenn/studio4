@@ -19,23 +19,20 @@ function Actor(){
             <span className="bar"></span>
             <div className="why">
                 <div>
-                    <h1>Pourquoi est-ce important d’avoir
-                            un cast trainer pour un acteur ?
-                            </h1>
-                                                <p>Que ce soit pour affiner sa condition physique pour un film d'action,
-                            adapter sa silhouette à un personnage historique, ou renforcer son corps
-                            pour éviter les blessures pendant les tournages intenses.
-                            </p>
-                            <p>Cette préparation minutieuse n'est pas seulement une question
-                            d'esthétique ; elle englobe également le développement de l'endurance,
-                            de la force et de la flexibilité, éléments essentiels pour les exigences des
-                            performances à l'écran.</p>
-                            <p>En mettant l'accent sur la prévention des blessures, un personal trainer
-                            s'assure que l'acteur puisse maintenir une présence constante, évitant
-                            ainsi les interruptions qui pourraient impacter la production. C'est une
-                            approche globale, personnalisée pour chaque acteur et chaque rôle, qui
-                            garantit une interprétation convaincante et une réalisation de projet sans
-                            faille.</p>
+                    <h1>Pourquoi est-ce important d’avoir un cast trainer pour un acteur ?</h1>
+                    <p>Pour les acteurs, le véritable enjeu réside dans leur capacité à livrer
+                    constamment des performances convaincantes, à résister aux rigueurs des
+                    tournages et à maîtriser le stress inhérent au métier. Une préparation physique
+                    ciblée est donc essentielle.</p>
+                    <p>Selon notre expérience, voici les obstacles souvent rencontrés par les acteurs :</p>
+                    <ul>
+                        <li>Un entraînement souvent inadapté aux exigences spécifiques de leurs rôles.</li>
+                        <li>Une grande fatigue physique augmentant le risque de blessures</li>
+                        <li>Gestion du Stress Défaillante</li>
+                        <li>Bien-être Négligé : Une tendance à sacrifier leur santé au profit de leur engagement artistique.</li>
+                    </ul>
+
+                        
                 </div>
                 <img src={ac_why} alt="img_sport"/>
             </div>
@@ -43,46 +40,53 @@ function Actor(){
             <div className="meth">
                 <img src={ac_met} alt="img_sport"/>
                 <div>
-                    <h1>NOTHE MÉTHODE</h1>
-                    <p>Ce qui distingue Studio4 dans l'univers du cast training, c'est notre
-                    approche centrée sur la personne. Nous évaluons minutieusement
-                    les besoins uniques de chaque acteur pour adapter notre
-                    accompagnement de manière absolue. Chaque élément de nos
-                    programmes est taillé sur mesure, garantissant une réponse précise
-                    à vos exigences spécifiques. Notre méthodologie évolue en
-                    permanence, affinée par l'analyse détaillée des données collectées
-                    lors des sessions d'entraînement. Cette approche dynamique assure
-                    que nos programmes restent à la pointe de l'efficacité et de la
-                    pertinence</p>
+                    <h1>NOTRE MÉTHODE</h1>
+                    <p>Chez Studio4, nous connaissons l’importance de la préparation
+                    physique dans l'interprétation d'un rôle. Notre processus débute par
+                    une évaluation minutieuse des exigences physiques de vos rôles, vous
+                    permettant de les incarner pleinement, tout en prévenant les blessures.
+                    </p>
+                    <p>Nous élaborons ensuite un plan personnalisé qui répond précisément à
+                    vos objectifs, au personnages et au calendrier de tournage. Notre but
+                    est de vous accompagner à chaque étape de votre préparation,
+                    assurant non seulement une amélioration de votre endurance, force, et
+                    mobilité, mais aussi la mise en place de stratégies efficaces pour la
+                    gestion de la fatigue et des blessures.</p>
                 </div>
             </div>
             <span className="bar"></span>
             <div className="app">
-                <div>
-                    <h1>2 APPROCHES</h1>
-                    <ul>
-                        <li>L’accompagnement annuel est conçu pour maintenir l'acteur
-                            à un niveau optimal de forme physique tout au long de
-                            l'année. L'objectif est de garantir une préparation efficace en
-                            4 semaines pour tous les rôles et événements à venir. Avec
-                            ce forfait annuel, l'acteur bénéficie d'une préparation
-                            physique continue, s'assurant qu'il soit toujours prêt à
-                            embrasser pleinement les défis de son métier.
-                            </li>
-                            <li>
-                            L’accompagnement pour un projet sert à préparer un acteur
-pour un projet spécifique. Lorsqu'un acteur se prépare pour
-un rôle spécifique, un suivi intensif et ciblé est mis en place
-pour répondre aux demandes précises du personnage. Ce
-service inclut des ajustements sur site avant et pendant le
-tournage, ainsi qu'un soutien après tournage pour une
-récupération complète et une transition en douceur vers de
-futurs projets.
-
-                            </li>
-                    </ul>
-                </div>
-                <img src={ac_app} alt="img_sport"/>
+                    <div className="app_1">
+                        <h1>NOS APPROCHES</h1>
+                    </div>
+                    <div className="app_2">
+                        <h2>Accompagnement sur long terme pour Acteurs</h2>
+                        <p>Cet accompagnement est idéalement conçu pour
+                            les acteurs cherchant à maintenir une condition
+                            physique optimale à travers l'année. Notre objectif
+                            est de vous maintenir à un niveau de préparation tel
+                            que, dès l'annonce d'un projet, vous puissiez
+                            atteindre votre pic de forme physique en seulement
+                            un mois. Notre programme garantit que vous serez
+                            toujours prêt à exceller, physiquement parlant, pour
+                            chaque opportunité qui se présente.
+                            </p>
+                    </div>
+                    <div className="app_3">
+                        <h2>Préparation dédiée à un rôle spécifique</h2>
+                        <p>Cet accompagnement est destiné aux acteurs se
+                        préparant pour des rôles exigeants et spécifiques.
+                        Que vous vous apprêtiez à incarner un personnage
+                        historique complexe ou à relever les défis physiques
+                        d'un rôle d'action, notre suivi intensif et personnalisé
+                        répond à chaque détail de votre performance. Ce
+                        service comprend des ajustements ciblés avant le
+                        début du tournage, un soutien continu pendant la
+                        production pour maximiser votre rendu à l'écran, et
+                        un suivi après le projet pour une récupération
+                        intégrale et une transition douce vers de futurs
+                        engagements</p>
+                    </div>        
             </div>
         </div>
 

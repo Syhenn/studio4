@@ -8,6 +8,13 @@
     align-items: center;
     flex-direction: column;
 }
+.contactForm>div h1{
+    margin: 20px 0 0 0;
+    color: white;
+}
+label>p {
+    color: white;
+}
 .contactForm label {
     color: white;
     margin: 10px 50px 10px 50px;
@@ -35,7 +42,7 @@
     background-color: rgb(34, 34, 34);
     font-size: 1.1rem;
     outline: none;
-    width: 230px;
+    width: 20vw;
     height: 40px;
 }
 .form_input input:focus, .form_select:focus {
@@ -67,5 +74,11 @@
     .form_submit_button{
         width: 50vw;
         height: 5vh;
+    }
+    .form_input input, .form_select{
+        width: 50vw;
+    }
+    .personal_info p{
+        font-size: 1.5rem;
     }
 }

@@ -30,6 +30,7 @@ function ContactForm() {
     return(
         <>
          <form className="contactForm" onSubmit={handleSubmit}>
+          <div><h1>Contactez-nous !</h1></div>
           <div className='form_name'>
             <div className='form_input'>
               <label>

@@ -23,7 +23,6 @@ p{
   z-index: -1;
   width: 100%;
   height: 100vh;
-  margin-bottom: 200px;
 }
 
 .home-background img {
@@ -68,47 +67,40 @@ p{
 }
 
 .home_info_button:hover{
-  background-color: rgb(40, 40, 40);
+  background-color: #66787f;
   color: rgb(255, 255, 255);
 }
-.home_misson {
+#home_misson {
   display: flex;
-  margin: 20px;
-  justify-content: space-around;
+  margin: 200px 15px 20px 15px;
+  justify-content: center;
+  align-items: center;
 }
 
-.home_misson .home_mission_text {
+#home_misson .home_mission_text {
   font-family: regular;
-  width: 60%;
+  width: 50%;
   padding: 0; 
   display: flex;
-  margin: 0 0 0 50px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
 }
 .home_mission_text p{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0 80px 0 0;
 }
 .home_mission_text h1{
   font-family: bebas, sans-serif;
   font-size: 2.5rem;
 }
-.home_misson .home_mission_pic {
-  width: 40%;
-  padding: 0 50px;
-}
 
-.home_misson .home_mission_pic img {
-  width: 100%;
-  height: auto;
+#home_misson .home_mission_pic img {
+  width: 33vw;
 }
 .home_mission_button{
   border-radius: 10px;
   border: none;
   color: white;
-  background-color: rgb(40, 40, 40);
+  background-color: #66787f;
   width: 18vw;
   height: 7vh;
   font-family: t-black;
@@ -128,9 +120,9 @@ p{
   transition: .5s;
   margin: 50px 0 0 0;
 }
-.home_public {
+#home_public {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -146,7 +138,7 @@ p{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   background-color: #ffffff; 
   width: calc(30% - 40px); 
-  max-width: 300px; 
+  max-width: 500px; 
 }
 
 .public_picture img {
@@ -161,12 +153,12 @@ p{
 
 .public_text h1 {
   margin-top: 20px;
-  font-size: 1.5rem; 
+  font-size: 2rem; 
 }
 
 .public_text p {
   margin: 10px 0 0 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -174,7 +166,7 @@ p{
   border-radius: 10px;
   border: none;
   color: white;
-  background-color: rgb(40, 40, 40);
+  background-color: #66787f(40, 40, 40);
   width: 18vw;
   height: 7vh;
   font-family: t-black;
@@ -202,7 +194,44 @@ p{
     height: 60vh;
     margin-bottom: 100px;
   }
-  
+  div#home_misson {
+    display: flex!important;
+    justify-content: center !important;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    text-align: center; 
+  }
+
+  .home_mission_text {
+    width: 90%; 
+    margin: 20px auto; 
+    text-align: center; 
+  }
+
+  .home_mission_text h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+  }
+
+  .home_mission_text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .home_mission_button {
+    width: 50%;
+    font-size: 1rem;
+    margin-top: 20px; 
+  }
+
+  .home-public-cont {
+    width: 90%; 
+    margin: 20px auto; 
+  }
+
+  .home_mission_button:hover {
+    width: 52%; 
+  }
   .home-presentation-text {
     margin-top: 0px;
     position: absolute; 
@@ -231,7 +260,7 @@ p{
     border-radius: 10px;
     border: none;
     color: white;
-    background-color: rgb(40, 40, 40);
+    background-color: #66787f;
     width: 50vw;
     height: 7vh;
     font-family: t-black;
@@ -239,37 +268,32 @@ p{
     transition: .5s;
     margin: 0;
   }
-  .home_misson .home_mission_text p, .home_misson .home_mission_text{
+  #home_misson .home_mission_text p, #home_misson .home_mission_text{
     display: flex;
     justify-content: center !important;
     align-items: center !important;
+    flex-direction: column;
     width: 90% !important;
     margin: 0 !important;
   }
 
-  .home_misson .home_mission_text h1{
+  #home_misson .home_mission_text h1{
     color: black;
     display: flex;
     justify-content: center;
   }
   .home_mission_pic{
-    width: 90% !important;
+    width: 100% !important;
     margin-top: 100px !important;
     padding: 0!important;
+  }
+  .home_mission_pic img {
+    width: 90vw!important;
   }
   .home_public_cont {
     width: 80%;
     max-width: none;
     margin-bottom: 20px;
-  }
-  .home_misson{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
   .home_mission_button{
     width: 35vw;
@@ -285,6 +309,4 @@ p{
 .floue .home-container nav {
     filter: none; 
 }
-
-
 }

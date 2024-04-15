@@ -11,6 +11,12 @@ function Home(){
     const navigate_actor= async ()=> {
         navigate('/Actor');
     }
+    const navigate_creator = async ()=>{
+        navigate('/Creator');
+    }
+    const navigate_artist = async ()=>{
+        navigate('/Artist');
+    }
     return(
     <>
     <div className="home-container">
@@ -25,7 +31,7 @@ function Home(){
             </div>
         </div>
         <span className="bar"></span>
-        <div className="home_misson">
+        <div id="home_misson">
             <div className="home_mission_text">
                 <h1>Studio4: Votre Préparation, Notre Mission</h1>
                 <p>Chez studio4, nous faisons plus que préparer les acteurs et créateurs de contenu
@@ -41,7 +47,7 @@ function Home(){
                 <img src={missionPic} />
             </div>
         </div>
-        <div className="home_public">
+        <div id="home_public">
             <div className="home_public_cont">
                 <div className="public_picture">
                     <img src={public_1}/>
@@ -67,7 +73,7 @@ function Home(){
                     </p>
                 </div>
                 <div>
-                    <button className="home_mission_button">En savoir plus</button>
+                    <button className="home_mission_button" onClick={navigate_creator}>En savoir plus</button>
                 </div>
                 
             </div>
@@ -82,7 +88,7 @@ function Home(){
                     </p>
                 </div>
                 <div>
-                    <button className="home_mission_button">En savoir plus</button>
+                    <button className="home_mission_button" onClick={navigate_artist}>En savoir plus</button>
                 </div>
 
             </div>
