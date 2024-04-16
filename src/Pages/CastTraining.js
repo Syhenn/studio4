@@ -65,7 +65,7 @@ function CastTraining(){
             </div>
             <div className="why">
                 <div>
-                    <h1>L'Exemple du film <h1 className="barbie_title">"Barbie"</h1></h1>
+                    <h1>L'Exemple du film <span className="barbie_title">"Barbie"</span></h1>
                     <p>Prenons l'exemple du film "Barbie"
                         , où les acteurs incarnant
                         les personnages de Ken ont participé à des entraînements
