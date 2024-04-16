@@ -11,17 +11,18 @@ function NavBar() {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-        // Ajout de la classe floue à l'élément body lorsque le menu est ouvert
         document.body.classList.toggle('floue');
     }
 
     const closeMenu = () => {
         setIsOpen(false);
-        // Retrait de la classe floue de l'élément body lorsque le menu est fermé
         document.body.classList.remove('floue');
     }
     const navigateHome = () =>{
         navigate('/');
+    }
+    const navigateCastTraining = () => {
+        navigate('/CastTraining');
     }
     const navigateToHomeSection = (sectionId) => {
         if (sectionId === 'home_public') {
@@ -47,7 +48,7 @@ function NavBar() {
             </div>
             <div className={`nav_links ${isOpen ? "active" : "close"}`}>
                 <a href="#home_misson" onClick={() => navigateToHomeSection('home_misson')}>About</a>
-                <a href="#" onClick={() => navigateToHomeSection('home_public')}>Cast training</a>
+                <a href="#" onClick={navigateCastTraining}>Cast training</a>
                 <a href="#" onClick={() => navigateToHomeSection('home_public')}>Articles</a>
                 <button className="contact_button" onClick={scrollToFooter}>Contact</button>
             </div>

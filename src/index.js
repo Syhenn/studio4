@@ -14,6 +14,7 @@ import Home from './Pages/Home';
 import Actor from './Pages/Actor';
 import Creator from './Pages/Creator';
 import Artist from './Pages/Artiste';
+import CastTraining from './Pages/CastTraining';
 library.add(faInstagram, faLinkedin, faCoffee);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,7 @@ root.render(
         <Route path="/Actor" element={<Actor/>} />
         <Route path="/Creator" element={<Creator/>}/>
         <Route path="/Artist" element={<Artist/>}/>
+        <Route path="/CastTraining" element={<CastTraining/>}/>
       </Routes>
       <Footer/>
   </BrowserRouter>

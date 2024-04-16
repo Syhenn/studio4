@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('../fonts/TitilliumWeb-Regular.ttf');
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/BebasNeue.ttf');
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.castTraining {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.bar {
+    width: 90vw;
+    height: 1px;
+    margin: 10px 0 10px 0;
+    background-color: #5e5e5e;
+}
+
+.services, .why{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 50px;
+}
+.meth{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 50px;
+}
+.meth div{
+    padding: 20px; 
+
+}
+.meth div p, .meth div h1 {
+    color: white;
+}
+.offer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 50px;
+    background-color: #66787f;
+    margin: 50px 0 30px 0;
+}
+.offer div{
+    background-color: #66787f;
+    padding: 20px; 
+
+}
+.offer div p, .offer div h1 {
+    color: white;
+}
+.app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    grid-auto-flow: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    background-color: #FFFFFF;
+    margin: 0 70px 0 70px;
+}
+
+.app_1 {
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+.app_2, .app_3 {
+    margin-top: 50px;
+    grid-row: 2;
+}
+.app .app_2 h2,.app .app_3 h2 {
+    font-size: 2rem;
+}
+.services img, .why img, .meth img, .app img {
+    width: 20vw; 
+    max-width: 300px; 
+}
+.services div, .why div{
+    margin: 0 50px 0 50px;
+    flex: 1;
+}
+.barbie_title {
+    color: pink;
+}
+h1, p {
+    margin: 0;
+}
+h1 {
+    font-size: 2.5vw; 
+    font-weight: bold;
+    color: #333333; 
+    font-family: bebas, sans-serif;
+}
+
+p, li{
+    font-size: 1.3vw; 
+    color: #666666; 
+    line-height: 1.6; 
+    font-family: 'Titillium Web', sans-serif;
+}
+.meth li {
+    color: white;
+    margin-left: 50px;
+}
+ul {
+    padding: 0 0 0 20px;
+}
+
+.services div, .why div{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    background-color: #FFFFFF;
+}
+.artist_info_button{
+    border-radius: 10px;
+    border: none;
+    margin: 30px;
+    color: rgb(40, 40, 40);
+    background-color: rgb(255, 255, 255);
+    width: 18vw;
+    height: 7vh;
+    font-family: t-black;
+    font-size: 1.3rem;
+    transition: .5s;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .actor{
+        display: flex;
+        flex-direction: column;
+    }
+    .services,  .meth, .offer {
+        display: flex;
+        flex-direction: column;
+    }.why{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .app {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px; 
+    }
+    .app h1{
+        text-align: left!important;
+    }
+
+    .app_1 {
+        text-align: center;
+        grid-column: 1; 
+        grid-row: 1; 
+        margin-top: 20px; 
+    }
+
+    .app_2, .app_3 {
+        margin-top: 20px; /* Espacement du haut */
+    }
+    .services img, .why img, .meth img, .app img, .offer img {
+        border-radius: 12px;
+        width: 45vw; 
+        max-width: 300px;
+    }
+    .services div, .why div, .meth div, .app div, .offer div {
+        margin: 10px 0 0 0;
+        flex: 1;
+    }
+    h1 {
+        font-size: 5vw; 
+        font-weight: bold;
+        color: #333333; 
+    }
+    
+    p,li{
+        font-size: 3.5vw; 
+        color: #666666; 
+        line-height: 1.6; 
+    }
+    .artist_info_button{
+        border-radius: 10px;
+        border: none;
+        width: 50vw;
+        height: 7vh;
+        font-family: t-black;
+        font-size: 1.3rem;
+        transition: .5s;
+    }
+}
