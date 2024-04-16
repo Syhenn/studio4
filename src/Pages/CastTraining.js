@@ -2,10 +2,8 @@ import {React, useEffect} from "react";
 import ct_1 from '../imgs/castTrain_1.png';
 import ct_2 from '../imgs/castTrain_2.png';
 import ac_met from '../imgs/actor-meth.png';
-import ac_app from '../imgs/actor-app.png';
 import logo_barbie from '../imgs/barbie_.png';
 import ac_why from '../imgs/actor-why.png';
-import ar_artist from '../imgs/artist.png';
 import '../styles/CastTraining.css';
 function CastTraining(){
     useEffect(() => {

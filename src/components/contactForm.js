@@ -4,13 +4,13 @@ import emailjs from 'emailjs-com';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    occupation: '', // Nouveau champ pour l'occupation
+    occupation: '',
     firstName: '',
     lastName: '',
     email: '',
     phoneNumber: '',
     region: '',
-    message: '' // Nouveau champ pour le message
+    message: '' 
   });
 
   const handleChange = (e) => {
@@ -27,6 +27,7 @@ function ContactForm() {
     emailjs.send('service_8pz9jdd', 'template_i0ltwhk', formData, 'EGUOv5cA2a8nCXjVm')
       .then((response) => {
         console.log('E-mail envoyé avec succès!', response.status, response.text);
+        window.location.reload();
       }, (error) => {
         console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
       });
