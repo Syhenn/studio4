@@ -20,7 +20,7 @@ function Artist(){
             <div className="services">
                 <img src={ac_serv} alt="img_sport"/>
                 <div>
-                    <h1>ÉLEVEZ VOTRE PERFORMANCES CÉNIQUE AVEC L'AIDE D'UN CAST TRAINER</h1>
+                    <h1>ÉLEVEZ VOTRE PERFORMANCES CÉNIQUES AVEC L'AIDE D'UN CAST TRAINER</h1>
                     <p>Atteindre des sommets dans le monde de la musique nécessite bien plus
                         qu'un talent vocal exceptionnel. Pour les artistes, maintenir une énergie
                         captivante sur scène, gérer les longues sessions de répétitions et
