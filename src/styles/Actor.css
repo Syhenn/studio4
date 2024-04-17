@@ -121,6 +121,9 @@ ul {
     .app_2, .app_3 {
         margin-top: 20px; /* Espacement du haut */
     }
+    .app .app_2>h2,.app .app_3>h2 {
+        font-size: 1.4rem!important;
+    }
     .services img, .why img, .meth img, .app img {
         width: 45vw; 
         max-width: 300px;
