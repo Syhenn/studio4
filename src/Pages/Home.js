@@ -80,12 +80,7 @@ function Home(){
         <div id="home_misson">
             <div className="home_mission_text">
                 <h1>Studio4: Votre Préparation, Notre Mission</h1>
-                <p>Chez studio4, nous faisons plus que préparer les acteurs et créateurs de contenu
-                    à leurs rôles ; nous transformons physiquement chaque individu pour répondre à ses 
-                    objectifs spécifiques. Notre approche dépasse l'ésthétique, ciblant la prévention des 
-                    blessures, la gestion de la fatigue, et une captivation authentique de l'audience. Nous personnalisons
-                    chaque entraînement pour sculpter votre endurance et votre apparence, assurant une performance
-                    énergique et persuasive à l'écran.  
+                <p>Chez Studio4, nous nous engageons à préparer physiquement les acteurs, créateurs de contenu, et artistes pour leurs projets, en visant la réussite dans leurs domaines respectifs. Nous adaptons la préparation physique traditionnelle en y intégrant un accompagnement personnalisé qui couvre non seulement la gestion du stress et de la fatigue, mais aussi la prévention des blessures, parmi d'autres aspects essentiels à votre bien-être et performance. Notre objectif est de vous accompagner à chaque étape de votre parcours, en assurant votre succès à tous les niveaux.  
                 </p>
                 <button className="home_mission_button">En savoir plus</button>
             </div>

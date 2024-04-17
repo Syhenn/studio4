@@ -1,8 +1,8 @@
 import {React, useEffect} from "react";
-import ac_serv from '../imgs/actor-service.png';
-import ac_met from '../imgs/actor-meth.png';
+import ac_serv from '../imgs/acteur_1.png';
+import ac_met from '../imgs/acteur_3.png';
 import ac_app from '../imgs/actor-app.png';
-import ac_why from '../imgs/actor-why.png';
+import ac_why from '../imgs/acteur_2.png';
 import '../styles/Actor.css';
 function Actor(){
     useEffect(() => {
@@ -39,7 +39,6 @@ function Actor(){
                 </div>
                 <img src={ac_why} alt="img_sport"/>
             </div>
-            <span className="bar"></span>
             <div className="meth">
                 <img src={ac_met} alt="img_sport"/>
                 <div>
@@ -57,7 +56,6 @@ function Actor(){
                     gestion de la fatigue et des blessures.</p>
                 </div>
             </div>
-            <span className="bar"></span>
             <div className="app">
                     <div className="app_1">
                         <h1>NOS APPROCHES</h1>

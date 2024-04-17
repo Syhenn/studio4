@@ -1,8 +1,7 @@
 import {React, useEffect} from "react";
 import ac_serv from '../imgs/actor-service.png';
-import ac_met from '../imgs/actor-meth.png';
-import ac_app from '../imgs/actor-app.png';
-import ac_why from '../imgs/actor-why.png';
+import ac_met from '../imgs/createur_3.png';
+import ac_why from '../imgs/createur_2.png';
 import '../styles/Creator.css';
 function Creator(){
     useEffect(() => {
