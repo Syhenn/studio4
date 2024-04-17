@@ -7,7 +7,7 @@
     src: url('../fonts/TitilliumWeb-SemiBold.ttf');
   }
   @font-face {
-    font-family: '';
+    font-family: bebas;
     src: url('../fonts/BebasNeue.ttf');
 }
 p{
@@ -249,7 +249,7 @@ span.bar {
   .home-presentation-text h1{
     width: 100%;
     margin-bottom: 15vh;
-    font-family: regular;
+    font-family: bebas;
     font-size: 10vw;
     color: white;
     

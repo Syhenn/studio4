@@ -89,6 +89,9 @@ nav a:hover {
 @media screen and (max-width: 768px) {
     nav{
         box-shadow: none;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: space-between;
     }
     .nav_links {
         position: absolute;
@@ -109,6 +112,7 @@ nav a:hover {
         padding: 0!important;
     }
     .nav_logo_container img {
+        padding: 0 0 0 20px;
         width: 130px;
     }
     .burger_menu {
@@ -125,5 +129,8 @@ nav a:hover {
     }
     .close{
         display: none;
+    }
+    .burger_menu{
+        padding: 0 20px 0 0;
     }
 }
