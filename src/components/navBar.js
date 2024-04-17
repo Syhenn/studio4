@@ -22,14 +22,20 @@ function NavBar() {
         navigate('/');
     }
     const navigateCastTraining = () => {
+        setIsOpen(false);
+        closeMenu();
         navigate('/CastTraining');
     }
     const navigateToHomeSection = (sectionId) => {
         if (sectionId === 'home_public') {
             window.location.href = '/#home_public';
+            setIsOpen(false);
+            closeMenu();
         } 
         else if (sectionId === 'home_misson') {
             window.location.href = '/#home_misson';
+            setIsOpen(false);
+            closeMenu();
         }        
         else {
             navigate(`/#${sectionId}`);
