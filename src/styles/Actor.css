@@ -123,6 +123,7 @@ ul {
     }
     .app .app_2>h2,.app .app_3>h2 {
         font-size: 1.4rem!important;
+        line-height: 1.2;
     }
     .services img, .why img, .meth img, .app img {
         width: 45vw; 

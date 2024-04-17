@@ -5,10 +5,16 @@ import ac_app from '../imgs/actor-app.png';
 import ac_why from '../imgs/chant_2.png';
 import ar_artist from '../imgs/artist.png';
 import '../styles/Artist.css';
+import { useNavigate } from 'react-router-dom';
 function Artist(){
+    const navigate = useNavigate();
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    const scrollToFooter = () => {
+        const footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: "smooth" });
+    }
     return(
         <div className="artist">
             <div className="services">
@@ -107,7 +113,7 @@ function Artist(){
                         un coaching physique sur mesure qui renforce la cohésion de
                         groupe et stimule la créativité.
                     </p>
-                    <button className="artist_info_button">En savoir plus</button>
+                    <button className="artist_info_button" onClick={scrollToFooter}>En savoir plus</button>
                 </div>
             </div>
         </div>

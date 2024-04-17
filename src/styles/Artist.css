@@ -170,6 +170,7 @@ ul {
 
     .app_2, .app_3 {
         margin-top: 20px; /* Espacement du haut */
+        line-height: 1.2;
     }
     .services img, .why img, .meth img, .app img, .offer img {
         border-radius: 12px;

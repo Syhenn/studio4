@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/Home.css';
 import missionPic from '../imgs/home_mission_pic.png';
-import public_1 from '../imgs/1.png';
-import public_2 from '../imgs/2.png';
-import public_3 from '../imgs/3.png';
+import public_1 from '../imgs/1.jpg';
+import public_2 from '../imgs/2.jpg';
+import public_3 from '../imgs/3.jpg';
 import background from '../imgs/home_background_img.png';
 function Home(){
     const navigate = useNavigate();
@@ -16,6 +16,10 @@ function Home(){
     }
     const navigate_artist = async ()=>{
         navigate('/Artist');
+    }
+    const scrollToFooter = () => {
+        const footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: "smooth" });
     }
     return(
     <>
@@ -82,7 +86,7 @@ function Home(){
                 <h1>Studio4: Votre Préparation, Notre Mission</h1>
                 <p>Chez Studio4, nous nous engageons à préparer physiquement les acteurs, créateurs de contenu, et artistes pour leurs projets, en visant la réussite dans leurs domaines respectifs. Nous adaptons la préparation physique traditionnelle en y intégrant un accompagnement personnalisé qui couvre non seulement la gestion du stress et de la fatigue, mais aussi la prévention des blessures, parmi d'autres aspects essentiels à votre bien-être et performance. Notre objectif est de vous accompagner à chaque étape de votre parcours, en assurant votre succès à tous les niveaux.  
                 </p>
-                <button className="home_mission_button">En savoir plus</button>
+                <button className="home_mission_button" onClick={scrollToFooter}>En savoir plus</button>
             </div>
             <div className="home_mission_pic">
                 <img src={missionPic} />
