@@ -76,7 +76,7 @@ function ContactForm() {
           <br />
           <div className='form_input'>
             <label>
-              <p>Numéro de téléphone:</p>
+              <p>Téléphone:</p>
               <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
             </label>
           </div>

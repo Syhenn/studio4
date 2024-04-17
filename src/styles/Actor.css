@@ -140,4 +140,10 @@ ul {
         color: #666666; 
         line-height: 1.6; 
     }
+    .floue body {
+        filter: blur(5px);
+    }
+    .floue .home-container nav {
+        filter: none; 
+    }
 }

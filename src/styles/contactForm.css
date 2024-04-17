@@ -74,8 +74,6 @@
     width: 25vw;
     height: 40px;
   }
-  .form_textarea {
-  }
   .form_input textarea { 
     resize: vertical;
     width: 50vw;
@@ -106,14 +104,14 @@
   }
   
   @media screen and (max-width: 768px) {
-    .form_name,
+    div.form_name,
     .form_region,
     .form_mail,
     .form_occupation, /* Nouveau style pour le champ "Occupation" */
     .form_message { /* Nouveau style pour le champ "Message" */
-      display: flex;
+      display: flex!important;
       align-items: center;
-      justify-content: space-evenly !important;
+      justify-content: flex-start!important;
       margin: 0;
       flex-direction: column;
     }
@@ -130,15 +128,27 @@
       width: 50vw;
       height: 5vh;
     }
-  
+    .contactForm label {
+      font-size: 3.5vw;
+    }
+    .radio_buttons input[type="radio"] {
+      transform: scale(0.5);
+      width: 10%;
+    }
     .form_input input,
     .form_select,
-    .form_textarea { /* Nouveau style pour le champ "Message" */
+    .form_textarea { 
       width: 50vw;
+      height: 2vh;
     }
-  
-    .personal_info p {
-      font-size: 1.5rem;
+
+    .form_input label p{
+      font-size: 3.5vw;
+      margin: 0;
+    }
+    .form_input textarea {
+      width: 80vw;
+      height: 10vh;
     }
   }
   

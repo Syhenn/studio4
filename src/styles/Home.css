@@ -14,7 +14,7 @@ p{
     font-family: regular;
     margin: 30px;
 }
-.bar {
+span.bar {
   width: 90vw;
   height: 1px;
   background-color: #5e5e5e;
@@ -297,6 +297,8 @@ p{
     width: 80%;
     max-width: none;
     margin-bottom: 20px;
+    margin-top: 0;
+    
   }
   .home_mission_button{
     width: 35vw;
@@ -307,6 +309,11 @@ p{
   
   .floue .home-container {
     filter: blur(5px);
+}
+span.bar {
+  width: 90vw;
+  height: 1px;
+  background-color: #5e5e5e;
 }
 
 .floue .home-container nav {
