@@ -58,8 +58,9 @@ footer {
 }
 @media screen and (max-width: 768px) {
     .personal_info {
-        flex-direction: column;
-        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
     }
 
     .network {
