@@ -61,7 +61,7 @@ nav a:hover {
     background-color: rgb(255, 255, 255);
     width: 15vw;
     height: 6vh;
-    font-family: t-regular;
+    font-family: semiBold;
     font-size: 1.3rem;
     transition: .5s;
 }
